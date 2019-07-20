@@ -43,8 +43,8 @@ export default {
         message(newVal){
             let that = this;
             this.cancelRequest();
-
-            this.axios.get(`/api/searchList?cityId=10&kw=${newVal}`,{
+            let cityId = this.$store.state.city.id;
+            this.axios.get(`/api/searchList?cityId=${cityId}&kw=${newVal}`,{
                 cancelToken:new this.axios.CancelToken(function(c){
                     that.source = c;//这里也可以使用箭头函数   就可以将that改为this
                 })
