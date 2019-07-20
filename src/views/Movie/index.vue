@@ -19,6 +19,7 @@
                 </keep-alive>
             </div>
        <TabBar />
+       <router-view name="detail"></router-view>
     </div>
 </template>
 
@@ -27,7 +28,6 @@ import Header from '@/components/Header';
 import TabBar from '@/components/TabBar';
 
 import {messageBox} from "@/components/JS"
-import { setTimeout } from 'timers';
 
 export default {
     name:"Movie",
@@ -40,7 +40,6 @@ export default {
             this.axios.get("/api/getLocation").then((res)=>{
             let msg = res.data.msg;
             if(msg === 'ok'){
-                console.log(res)
                 let nm = res.data.data.nm;
                 let id = res.data.data.id;
                 if(this.$store.state.city.id==id){return;}
