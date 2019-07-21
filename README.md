@@ -27,3 +27,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+喵喵--npm run serve启动
+喵喵server---npm run start启动
+
+管理员账号密码是admin  123
