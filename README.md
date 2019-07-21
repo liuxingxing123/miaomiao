@@ -33,3 +33,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 喵喵server---npm run start启动
 
 管理员账号密码是admin  123
+
+
+miaomiaoserver 和喵喵在同级目录下
