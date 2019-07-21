@@ -34,5 +34,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 管理员账号密码是admin  123
 
+<<<<<<< HEAD
 
 miaomiaoserver 和喵喵在同级目录下
+=======
+将miaomiaoserver提出来放在喵喵的同级目录在启动
+>>>>>>> dev
