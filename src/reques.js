@@ -338,3 +338,10 @@ export default function request(options){
     })
     return targetPromise
 }
+
+/*
+await CheckMeAi().timer()
+
+await CheckNameApi().cancelToken(token).intercept(false)
+
+*/
