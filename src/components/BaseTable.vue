@@ -56,8 +56,8 @@ import filterOptions from './filterOptions'
 /* 
 <my-table
       :tableList="tableList"
-      :tableLoading="tagLoading"
-      :tableData="tagList"
+      :tableLoading="tableLoading"
+      :tableData="tableData"
       :pageParams="{
           currPageNum: query.currPageNum,
           pageSize: query.pageSize,
@@ -76,6 +76,17 @@ import filterOptions from './filterOptions'
         </template>
       </el-table-column>
     </my-table>
+    
+    // 改变页码
+        pageParamsChange(pages){
+            const { currPageNum , pageSize } = pages;
+            this.pageParams = {
+                ...this.pageParams,
+                currPageNum,
+                pageSize
+            }
+            this.getPublishList()
+        },
  */
 export default {
   name: 'BaseTable',
