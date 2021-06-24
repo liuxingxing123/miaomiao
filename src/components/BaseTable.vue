@@ -51,8 +51,8 @@
 </template>
 
 <script>
-import myPagination from '@/components/myPagination';
-import filterOptions from '@/public/filterOptions'
+import myPagination from './myPagination';
+import filterOptions from './filterOptions'
 /* 
 <my-table
       :tableList="tableList"
