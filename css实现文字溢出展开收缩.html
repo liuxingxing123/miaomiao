@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content{
+      display: flex;
+    }
+    .text{
+      width: 475px;
+      border: aqua solid 1px;
+      color: #333;
+      font-size: 14px;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    .text::before{
+      content:'';
+      float:right;
+      height: 100%;
+      margin-bottom: -19px;
+    }
+    .btn{
+      float: right;
+      color: dodgerblue;
+      cursor: pointer;
+      clear: both;
+      margin-right: 8px;
+    }
+    .btn::after{
+      content:'展开';
+    }
+    #exp{
+      display: none;
+    }
+    #exp:checked + .text{
+      -webkit-line-clamp: 999;
+    }
+    #exp:checked + .text .btn::after{
+      content:'收起';
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <input type="checkbox" id="exp">
+    <div class="text">
+      <label for='exp' class="btn"></label>
+      <span>但听得蹄声如雷，十余乘马疾风般卷上山来。马上乘客一色都是玄色薄毡大氅，
+        里面玄色布衣，但见人似虎，马如龙，人既矫捷，马亦雄骏，每一匹马都是高头
+        长腿，通体黑毛，奔到近处，群雄眼前一亮，金光闪闪，却见每匹马的蹄铁竟然
+        是黄金打就。来者一共是一十九骑，人数虽不甚多，气势之壮，却似有如千军万
+        马一般，前面一十八骑奔到近处，拉马向两旁一分，最后一骑从中驰出</span>
+    </div>
+  </div>
+</body>
+</html>
